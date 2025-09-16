@@ -15,7 +15,7 @@ const Contact = () => {
     icon: <Phone className="h-6 w-6 text-primary" />,
     title: "Call Us",
     content: "+1 (555) 123-4567",
-    subContent: "+1 (555) 765-4321"
+    subContent: "+1 972 801 9970"
   }, {
     icon: <MapPin className="h-6 w-6 text-primary" />,
     title: "Visit Us",
