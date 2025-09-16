@@ -5,37 +5,29 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: <Mail className="h-6 w-6 text-primary" />,
-      title: "Email Us",
-      content: "services@amensys.com",
-      subContent: "sales@amensys.com"
-    },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Call Us",
-      content: "+1 (555) 123-4567",
-      subContent: "+1 (555) 765-4321"
-    },
-    {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Visit Us",
-      content: "123 Tech District",
-      subContent: "San Francisco, CA 94105"
-    },
-    {
-      icon: <Clock className="h-6 w-6 text-primary" />,
-      title: "Business Hours",
-      content: "Mon - Fri: 9AM - 6PM",
-      subContent: "Sat: 10AM - 4PM"
-    }
-  ];
-
-  return (
-    <section id="contact" className="py-20 bg-gradient-subtle">
+  const contactInfo = [{
+    icon: <Mail className="h-6 w-6 text-primary" />,
+    title: "Email Us",
+    content: "services@amensys.com",
+    subContent: "sales@amensys.com"
+  }, {
+    icon: <Phone className="h-6 w-6 text-primary" />,
+    title: "Call Us",
+    content: "+1 (555) 123-4567",
+    subContent: "+1 (555) 765-4321"
+  }, {
+    icon: <MapPin className="h-6 w-6 text-primary" />,
+    title: "Visit Us",
+    content: "123 Tech District",
+    subContent: "San Francisco, CA 94105"
+  }, {
+    icon: <Clock className="h-6 w-6 text-primary" />,
+    title: "Business Hours",
+    content: "Mon - Fri: 9AM - 6PM",
+    subContent: "Sat: 10AM - 4PM"
+  }];
+  return <section id="contact" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -58,8 +50,7 @@ const Contact = () => {
               </p>
             </div>
             
-            {contactInfo.map((info, index) => (
-              <Card key={index} className="p-4 hover-lift bg-card border-border">
+            {contactInfo.map((info, index) => <Card key={index} className="p-4 hover-lift bg-card border-border">
                 <div className="flex items-start space-x-4">
                   <div className="p-2 rounded-lg bg-accent">
                     {info.icon}
@@ -67,11 +58,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground">{info.title}</h4>
                     <p className="text-muted-foreground text-sm">{info.content}</p>
-                    <p className="text-muted-foreground text-sm">{info.subContent}</p>
+                    
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
 
             <Card className="p-6 bg-primary text-primary-foreground">
               <h4 className="font-semibold mb-2">24/7 Emergency Support</h4>
@@ -97,51 +87,29 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
-                      <Input
-                        id="firstName"
-                        placeholder="John"
-                        className="border-border focus:border-primary"
-                      />
+                      <Input id="firstName" placeholder="John" className="border-border focus:border-primary" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
-                      <Input
-                        id="lastName"
-                        placeholder="Doe"
-                        className="border-border focus:border-primary"
-                      />
+                      <Input id="lastName" placeholder="Doe" className="border-border focus:border-primary" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="john.doe@company.com"
-                        className="border-border focus:border-primary"
-                      />
+                      <Input id="email" type="email" placeholder="john.doe@company.com" className="border-border focus:border-primary" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+1 (555) 123-4567"
-                        className="border-border focus:border-primary"
-                      />
+                      <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" className="border-border focus:border-primary" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="company">Company</Label>
-                      <Input
-                        id="company"
-                        placeholder="Acme Corporation"
-                        className="border-border focus:border-primary"
-                      />
+                      <Input id="company" placeholder="Acme Corporation" className="border-border focus:border-primary" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="service">Service Interest</Label>
@@ -163,12 +131,7 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell us about your project requirements and how we can help..."
-                      rows={6}
-                      className="border-border focus:border-primary"
-                    />
+                    <Textarea id="message" placeholder="Tell us about your project requirements and how we can help..." rows={6} className="border-border focus:border-primary" />
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -185,8 +148,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
