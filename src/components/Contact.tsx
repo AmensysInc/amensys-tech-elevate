@@ -19,8 +19,8 @@ const Contact = () => {
   }, {
     icon: <MapPin className="h-6 w-6 text-primary" />,
     title: "Visit Us",
-    content: "123 Tech District",
-    subContent: "San Francisco, CA 94105"
+    content: "860 Hebron Parkway, Suite# 604",
+    subContent: "Lewisville, TX - 75057"
   }, {
     icon: <Clock className="h-6 w-6 text-primary" />,
     title: "Business Hours",
