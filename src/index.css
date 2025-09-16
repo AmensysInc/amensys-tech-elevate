@@ -9,13 +9,13 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 215 25% 27%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 215 25% 15%;
 
     /* Corporate Blue Primary with vibrant accents */
     --primary: 214 94% 58%;
@@ -25,10 +25,10 @@ All colors MUST be HSL.
 
     /* Professional Grey Secondary */
     --secondary: 210 11% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary-foreground: 215 25% 15%;
 
     --muted: 210 11% 96%;
-    --muted-foreground: 215 13% 65%;
+    --muted-foreground: 215 13% 40%;
 
     /* Vibrant Accent Colors */
     --accent: 214 100% 97%;
@@ -49,7 +49,7 @@ All colors MUST be HSL.
     --corporate-blue-light: 214 100% 97%;
     --corporate-cyan: 188 100% 60%;
     --corporate-purple: 256 100% 70%;
-    --corporate-grey: 215 13% 65%;
+    --corporate-grey: 215 13% 45%;
     --corporate-grey-light: 210 11% 96%;
 
     /* Dynamic Gradients */
