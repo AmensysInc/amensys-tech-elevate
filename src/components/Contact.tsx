@@ -11,7 +11,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email Us",
-      content: "info@amensys.com",
+      content: "services@amensys.com",
       subContent: "sales@amensys.com"
     },
     {
