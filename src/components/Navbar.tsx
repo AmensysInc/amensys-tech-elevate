@@ -39,7 +39,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="cta" size="default">
+            <Button variant="cta" size="default" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started
             </Button>
           </div>
@@ -71,7 +71,15 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="cta" size="default" className="w-full">
+                <Button 
+                  variant="cta" 
+                  size="default" 
+                  className="w-full"
+                  onClick={() => {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    setIsMenuOpen(false);
+                  }}
+                >
                   Get Started
                 </Button>
               </div>
