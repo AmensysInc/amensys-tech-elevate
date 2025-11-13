@@ -49,12 +49,22 @@ const Hero = () => {
 
           {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="xl" className="min-w-[250px] pulse-glow group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="min-w-[250px] pulse-glow group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Zap className="mr-2 h-6 w-6 group-hover:animate-bounce" />
               Start Your Transformation
               <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline-corporate" size="xl" className="min-w-[250px] hover-glow group bg-background/10 backdrop-blur-sm">
+            <Button 
+              variant="outline-corporate" 
+              size="xl" 
+              className="min-w-[250px] hover-glow group bg-background/10 backdrop-blur-sm"
+              onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Play className="mr-2 h-6 w-6 group-hover:scale-110 transition-transform" />
               Watch Success Stories
             </Button>
