@@ -91,7 +91,12 @@ const Services = () => {
                     </div>
                   ))}
                 </div>
-                <Button variant="ghost" size="sm" className="w-full mt-4 group-hover:bg-primary group-hover:text-white transition-all">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="w-full mt-4 group-hover:bg-primary group-hover:text-white transition-all"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -110,10 +115,18 @@ const Services = () => {
               Let our experts help you choose the right technology solutions for your unique business needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg">
+              <Button 
+                variant="cta" 
+                size="lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Schedule Free Consultation
               </Button>
-              <Button variant="outline-corporate" size="lg">
+              <Button 
+                variant="outline-corporate" 
+                size="lg"
+                onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 View Case Studies
               </Button>
             </div>

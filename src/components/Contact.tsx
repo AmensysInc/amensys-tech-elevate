@@ -68,7 +68,12 @@ const Contact = () => {
               <p className="text-sm opacity-90">
                 Critical issues? Our emergency support team is available around the clock.
               </p>
-              <Button variant="secondary" size="sm" className="mt-4">
+              <Button 
+                variant="secondary" 
+                size="sm" 
+                className="mt-4"
+                onClick={() => window.location.href = 'tel:+19728019970'}
+              >
                 Emergency Hotline
               </Button>
             </Card>
@@ -135,10 +140,25 @@ const Contact = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button variant="cta" size="lg" className="flex-1">
+                    <Button 
+                      variant="cta" 
+                      size="lg" 
+                      className="flex-1"
+                      type="submit"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        alert('Thank you for your message! Our team will contact you within 24 hours.');
+                      }}
+                    >
                       Send Message
                     </Button>
-                    <Button variant="outline-corporate" size="lg" className="flex-1">
+                    <Button 
+                      variant="outline-corporate" 
+                      size="lg" 
+                      className="flex-1"
+                      type="button"
+                      onClick={() => window.location.href = 'tel:+19728019970'}
+                    >
                       Schedule Call
                     </Button>
                   </div>
