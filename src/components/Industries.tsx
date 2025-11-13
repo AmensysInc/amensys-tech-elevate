@@ -135,6 +135,7 @@ const Industries = () => {
                   variant="ghost" 
                   size="sm" 
                   className="w-full group-hover:bg-primary group-hover:text-white transition-all"
+                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Explore Solutions
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -162,14 +163,24 @@ const Industries = () => {
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                 We customize solutions for any sector. Let's discuss how we can transform your specific industry challenges.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-gray-100">
-                  Schedule Industry Consultation
-                </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-                  View All Case Studies
-                </Button>
-              </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    variant="secondary" 
+                    size="lg" 
+                    className="bg-white text-primary hover:bg-gray-100"
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Schedule Industry Consultation
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="border-white text-white hover:bg-white hover:text-primary"
+                    onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    View All Case Studies
+                  </Button>
+                </div>
             </div>
           </div>
         </div>

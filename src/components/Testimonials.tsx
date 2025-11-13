@@ -203,11 +203,21 @@ const Testimonials = () => {
                 Let's discuss how we can help you achieve similar transformational results for your organization.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="cta" size="lg" className="min-w-[200px]">
+                <Button 
+                  variant="cta" 
+                  size="lg" 
+                  className="min-w-[200px]"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Start Your Success Story
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline-corporate" size="lg" className="min-w-[200px]">
+                <Button 
+                  variant="outline-corporate" 
+                  size="lg" 
+                  className="min-w-[200px]"
+                  onClick={() => document.getElementById('industries')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   View More Case Studies
                 </Button>
               </div>
