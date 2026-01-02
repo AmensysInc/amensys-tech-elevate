@@ -58,73 +58,52 @@ const Industries = () => {
   ];
 
   return (
-    <section id="industries" className="py-24 bg-gradient-subtle relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, hsl(214 94% 58% / 0.1) 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, hsl(188 100% 60% / 0.1) 0%, transparent 50%)`
-        }}></div>
-      </div>
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="industries" className="section-padding bg-background">
+      <div className="container mx-auto container-padding">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-bounce-in">
-            🏢 Industry Expertise
-          </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+        <div className="text-center mb-16">
+          <h2 className="mb-4">
             Transforming <span className="text-gradient">Every Industry</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From healthcare to finance, our cutting-edge technology solutions drive innovation 
             across diverse sectors worldwide.
           </p>
         </div>
 
         {/* Industries Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {industries.map((industry, index) => (
             <Card 
               key={index} 
-              className="group hover-lift bg-gradient-card border-border shadow-card-hover overflow-hidden relative"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group hover-lift border-border overflow-hidden"
             >
-              {/* Background Image */}
-              <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                <img 
-                  src={industry.image} 
-                  alt={`${industry.title} Technology`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              <CardContent className="relative z-10 p-8">
+              <CardContent className="p-6">
                 {/* Icon */}
-                <div className="mb-6">
-                  <div className="w-16 h-16 rounded-lg bg-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center">
                     {industry.icon}
                   </div>
                 </div>
 
                 {/* Content */}
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-semibold text-foreground mb-3">
                   {industry.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
                   {industry.description}
                 </p>
 
                 {/* Stats */}
-                <div className="text-sm font-semibold text-primary mb-4">
+                <div className="text-xs font-semibold text-primary mb-4">
                   {industry.stats}
                 </div>
 
                 {/* Highlights */}
-                <div className="space-y-2 mb-6">
+                <div className="space-y-1.5 mb-4">
                   {industry.highlights.map((highlight, highlightIndex) => (
-                    <div key={highlightIndex} className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <div key={highlightIndex} className="flex items-center text-xs">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
                       <span className="text-foreground">{highlight}</span>
                     </div>
                   ))}
@@ -134,11 +113,11 @@ const Industries = () => {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className="w-full group-hover:bg-primary group-hover:text-white transition-all"
+                  className="w-full font-medium"
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Explore Solutions
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
@@ -146,43 +125,33 @@ const Industries = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="bg-gradient-primary rounded-2xl p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `radial-gradient(circle at 20% 20%, white 2px, transparent 2px),
-                                 radial-gradient(circle at 80% 80%, white 1px, transparent 1px)`
-              }}></div>
+        <div className="text-center">
+          <Card className="p-8 bg-primary text-primary-foreground border-0">
+            <h3 className="text-2xl font-semibold mb-3">
+              Don't See Your Industry?
+            </h3>
+            <p className="text-primary-foreground/90 mb-6 max-w-xl mx-auto">
+              We customize solutions for any sector. Let's discuss how we can transform your specific industry challenges.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                className="bg-white text-primary hover:bg-gray-100 font-medium"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Schedule Consultation
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-white/20 text-white hover:bg-white/10 font-medium"
+                onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                View Case Studies
+              </Button>
             </div>
-            
-            <div className="relative z-10">
-              <h3 className="text-3xl sm:text-4xl font-bold mb-6">
-                Don't See Your Industry?
-              </h3>
-              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                We customize solutions for any sector. Let's discuss how we can transform your specific industry challenges.
-              </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    variant="secondary" 
-                    size="lg" 
-                    className="bg-white text-primary hover:bg-gray-100"
-                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Schedule Industry Consultation
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="border-white text-white hover:bg-white hover:text-primary"
-                    onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    View All Case Studies
-                  </Button>
-                </div>
-            </div>
-          </div>
+          </Card>
         </div>
       </div>
     </section>

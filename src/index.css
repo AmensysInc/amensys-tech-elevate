@@ -17,62 +17,63 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Corporate Blue Primary with vibrant accents */
-    --primary: 214 94% 58%;
+    /* Professional Teal/Blue Primary - Modern & Sophisticated */
+    --primary: 200 95% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 214 94% 48%;
-    --primary-glow: 214 100% 70%;
+    --primary-hover: 200 95% 40%;
+    --primary-glow: 200 95% 50%;
 
     /* Professional Grey Secondary */
-    --secondary: 210 11% 96%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 210 11% 96%;
-    --muted-foreground: 215 13% 40%;
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 40%;
 
-    /* Vibrant Accent Colors */
-    --accent: 214 100% 97%;
-    --accent-foreground: 214 84% 56%;
-    --accent-cyan: 188 100% 60%;
-    --accent-purple: 256 100% 70%;
+    /* Subtle Accent Colors */
+    --accent: 200 30% 97%;
+    --accent-foreground: 200 95% 45%;
+    --accent-cyan: 200 60% 50%;
+    --accent-purple: 220 50% 55%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 20% 88%;
-    --input: 214 20% 88%;
-    --ring: 214 84% 56%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 200 95% 45%;
 
-    /* Enhanced Corporate Colors */
-    --corporate-blue: 214 94% 58%;
-    --corporate-blue-dark: 214 94% 48%;
-    --corporate-blue-light: 214 100% 97%;
-    --corporate-cyan: 188 100% 60%;
-    --corporate-purple: 256 100% 70%;
-    --corporate-grey: 215 13% 45%;
-    --corporate-grey-light: 210 11% 96%;
+    /* Professional Corporate Colors */
+    --corporate-blue: 200 95% 45%;
+    --corporate-blue-dark: 200 95% 38%;
+    --corporate-blue-light: 200 30% 97%;
+    --corporate-cyan: 200 60% 50%;
+    --corporate-purple: 220 50% 55%;
+    --corporate-grey: 220 10% 45%;
+    --corporate-grey-light: 220 15% 96%;
 
-    /* Dynamic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 94% 58%), hsl(188 100% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(256 100% 70%), hsl(214 94% 58%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 94% 58%) 0%, hsl(188 100% 60%) 50%, hsl(256 100% 70%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(214 100% 99%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(214 100% 98%));
-    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(214 94% 58% / 0.1), transparent 70%);
+    /* Subtle Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(200 60% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 60% 50%), hsl(200 95% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100% / 0.85) 0%, hsl(220 10% 98% / 0.9) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 20% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    --gradient-tech: radial-gradient(circle at 50% 50%, hsl(220 15% 30% / 0.15), transparent 70%);
 
-    /* Enhanced Shadows */
-    --shadow-corporate: 0 25px 50px -12px hsl(214 94% 58% / 0.25);
-    --shadow-card: 0 8px 30px -8px hsl(215 25% 27% / 0.12);
-    --shadow-button: 0 8px 25px 0 hsl(214 94% 58% / 0.35);
-    --shadow-glow: 0 0 50px hsl(214 94% 58% / 0.4);
-    --shadow-neon: 0 0 20px hsl(188 100% 60% / 0.6), 0 0 40px hsl(188 100% 60% / 0.4);
+    /* Modern Professional Shadows */
+    --shadow-corporate: 0 4px 6px -1px hsl(220 25% 27% / 0.1), 0 2px 4px -1px hsl(220 25% 27% / 0.06);
+    --shadow-card: 0 1px 3px 0 hsl(220 25% 27% / 0.1), 0 1px 2px -1px hsl(220 25% 27% / 0.1);
+    --shadow-button: 0 4px 6px -1px hsl(200 95% 45% / 0.2), 0 2px 4px -2px hsl(200 95% 45% / 0.1);
+    --shadow-glow: 0 0 20px hsl(200 95% 45% / 0.15);
+    --shadow-neon: 0 0 15px hsl(200 60% 50% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(220 25% 27% / 0.1), 0 4px 6px -4px hsl(220 25% 27% / 0.1);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -92,51 +93,51 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 215 28% 17%;
-    --foreground: 210 11% 96%;
+    --background: 220 25% 12%;
+    --foreground: 220 15% 96%;
 
-    --card: 215 28% 17%;
-    --card-foreground: 210 11% 96%;
+    --card: 220 25% 12%;
+    --card-foreground: 220 15% 96%;
 
-    --popover: 215 28% 17%;
-    --popover-foreground: 210 11% 96%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 220 15% 96%;
 
-    --primary: 214 84% 56%;
+    --primary: 200 85% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 214 84% 66%;
+    --primary-hover: 200 85% 60%;
 
-    --secondary: 215 25% 27%;
-    --secondary-foreground: 210 11% 96%;
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 220 15% 96%;
 
-    --muted: 215 25% 27%;
-    --muted-foreground: 215 13% 65%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 215 25% 27%;
-    --accent-foreground: 214 84% 56%;
+    --accent: 220 20% 20%;
+    --accent-foreground: 200 85% 55%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 11% 96%;
+    --destructive-foreground: 220 15% 96%;
 
-    --border: 215 25% 27%;
-    --input: 215 25% 27%;
-    --ring: 214 84% 56%;
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 200 85% 55%;
 
     /* Dark Mode Corporate Colors */
-    --corporate-blue: 214 84% 56%;
-    --corporate-blue-dark: 214 84% 46%;
-    --corporate-blue-light: 215 25% 27%;
-    --corporate-grey: 215 13% 65%;
-    --corporate-grey-light: 215 25% 27%;
+    --corporate-blue: 200 85% 55%;
+    --corporate-blue-dark: 200 85% 48%;
+    --corporate-blue-light: 220 20% 20%;
+    --corporate-grey: 220 10% 65%;
+    --corporate-grey-light: 220 20% 20%;
 
     /* Dark Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 66%));
-    --gradient-subtle: linear-gradient(180deg, hsl(215 28% 17%), hsl(215 25% 27%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(214 84% 66%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 55%), hsl(200 70% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 12%), hsl(220 20% 18%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 55%) 0%, hsl(200 70% 60%) 100%);
 
     /* Dark Shadows */
-    --shadow-corporate: 0 10px 40px -10px hsl(214 84% 56% / 0.25);
-    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.15);
-    --shadow-button: 0 4px 14px 0 hsl(214 84% 56% / 0.35);
+    --shadow-corporate: 0 10px 40px -10px hsl(200 85% 55% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.2);
+    --shadow-button: 0 4px 14px 0 hsl(200 85% 55% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -154,20 +155,46 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* Enhanced Animations */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  /* Modern Professional Animations */
   .hover-lift {
-    @apply transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-corporate;
+    @apply transition-all duration-300 ease-out hover:transform hover:-translate-y-1 hover:shadow-lg;
   }
 
   .hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
+    @apply transition-transform duration-200 ease-out hover:scale-[1.02];
   }
 
   .hover-glow {
-    @apply transition-all duration-500 hover:shadow-glow;
+    @apply transition-all duration-300 ease-out hover:shadow-md;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
   }
 
   .fade-in {
@@ -235,9 +262,9 @@ All colors MUST be HSL.
     right: 0;
     bottom: 0;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(214 94% 58% / 0.3) 2px, transparent 2px),
-      radial-gradient(circle at 80% 20%, hsl(188 100% 60% / 0.3) 1px, transparent 1px),
-      radial-gradient(circle at 40% 80%, hsl(256 100% 70% / 0.3) 1px, transparent 1px);
+      radial-gradient(circle at 20% 50%, hsl(200 95% 45% / 0.15) 2px, transparent 2px),
+      radial-gradient(circle at 80% 20%, hsl(200 60% 50% / 0.12) 1px, transparent 1px),
+      radial-gradient(circle at 40% 80%, hsl(220 50% 55% / 0.1) 1px, transparent 1px);
     background-size: 50px 50px, 30px 30px, 40px 40px;
     animation: float 20s linear infinite;
     pointer-events: none;
@@ -259,8 +286,8 @@ All colors MUST be HSL.
   }
 
   @keyframes pulse-glow {
-    from { box-shadow: 0 0 20px hsl(214 94% 58% / 0.4); }
-    to { box-shadow: 0 0 40px hsl(214 94% 58% / 0.8), 0 0 60px hsl(188 100% 60% / 0.4); }
+    from { box-shadow: 0 0 20px hsl(200 95% 45% / 0.25); }
+    to { box-shadow: 0 0 40px hsl(200 95% 45% / 0.4), 0 0 60px hsl(200 60% 50% / 0.25); }
   }
 
   /* Video Container */
@@ -278,7 +305,7 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, hsl(214 94% 58% / 0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, hsl(200 95% 45% / 0.08) 50%, transparent 70%);
     pointer-events: none;
   }
 }

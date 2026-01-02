@@ -51,42 +51,42 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="section-padding bg-accent/30">
+      <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="mb-4">
             Our <span className="text-gradient">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive IT solutions designed to accelerate your digital transformation 
             and drive sustainable business growth.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="hover-lift border-border bg-card shadow-card-hover group"
+              className="hover-lift border-border bg-card group"
             >
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 rounded-lg bg-accent">
+              <CardHeader className="pb-4">
+                <div className="mx-auto mb-4 p-3 rounded-lg bg-accent w-fit">
                   {service.icon}
                 </div>
-                <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl font-semibold text-center">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardDescription className="text-muted-foreground leading-relaxed text-center">
                   {service.description}
                 </CardDescription>
-                <div className="space-y-2">
+                <div className="space-y-2 pt-2">
                   {service.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
                       <span className="text-foreground">{benefit}</span>
                     </div>
                   ))}
@@ -94,11 +94,11 @@ const Services = () => {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className="w-full mt-4 group-hover:bg-primary group-hover:text-white transition-all"
+                  className="w-full mt-4 font-medium"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
@@ -107,30 +107,32 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <div className="bg-card rounded-lg p-8 shadow-corporate border border-border">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
+          <Card className="p-8 border-border">
+            <h3 className="text-2xl font-semibold text-foreground mb-3">
               Ready to Transform Your Business?
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
               Let our experts help you choose the right technology solutions for your unique business needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                variant="cta" 
+                variant="default" 
                 size="lg"
+                className="font-medium"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Schedule Free Consultation
               </Button>
               <Button 
-                variant="outline-corporate" 
+                variant="outline" 
                 size="lg"
+                className="font-medium"
                 onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Case Studies
               </Button>
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
